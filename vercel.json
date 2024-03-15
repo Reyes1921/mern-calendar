@@ -1,7 +1,7 @@
 {
   "routes": [
-    {"src": "/api/auth", "dest": "/routes/auth.js"},
-    {"src": "/api/events", "dest": "/routes/events.js"}
+    {"routes": "/api/auth", "dest": "/routes/auth.js"},
+    {"routes": "/api/events", "dest": "/routes/events.js"}
   ],
-  "rewrites": [{"source": "/(.*)", "destination": "/"}]
+  "rewrites": [{"routes": "/(.*)", "destination": "/"}]
 }
