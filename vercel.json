@@ -1,0 +1,3 @@
+{
+  "rewrites": [{"src": "/api/auth", "destination": "/routes/events"}]
+}
