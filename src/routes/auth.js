@@ -3,17 +3,17 @@
     host + /api/auth
 */
 
-const { Router } = require("express");
-const { check } = require("express-validator");
-const { validarCampos } = require("../middlewares/validar-campos");
-const { validarJWT } = require("../middlewares/validar-jwt");
+const {Router} = require("express")
+const {check} = require("express-validator")
+const {validarCampos} = require("../../middlewares/validar-campos")
+const {validarJWT} = require("../../middlewares/validar-jwt")
 const {
   crearUsuario,
   loginUsuario,
   revalidarToken,
-} = require("../controllers/auth");
+} = require("../../controllers/auth")
 
-const router = Router();
+const router = Router()
 router.post(
   "/new",
   [
@@ -25,7 +25,7 @@ router.post(
     validarCampos,
   ],
   crearUsuario
-);
+)
 
 router.post(
   "/",
@@ -37,8 +37,8 @@ router.post(
     validarCampos,
   ],
   loginUsuario
-);
+)
 
-router.get("/renew", validarJWT, revalidarToken);
+router.get("/renew", validarJWT, revalidarToken)
 
-module.exports = router;
+module.exports = router
