@@ -1,6 +1,3 @@
 {
-  "routes": [
-    {"routes": "/api/auth", "dest": "/routes/auth.js"},
-    {"routes": "/api/events", "dest": "/routes/events.js"}
-  ]
+  "routes": [{"routes": "/(.*)", "dest": "/"}]
 }
