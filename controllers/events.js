@@ -76,11 +76,6 @@ const actualizarEventos = async (req, res = response) => {
       msg: "Hable con el administrador",
     })
   }
-
-  res.json({
-    ok: true,
-    eventId,
-  })
 }
 
 const eliminarEventos = async (req, res = response) => {
@@ -117,11 +112,6 @@ const eliminarEventos = async (req, res = response) => {
       msg: "Hable con el administrador",
     })
   }
-
-  res.json({
-    ok: true,
-    eventId,
-  })
 }
 
 module.exports = {
